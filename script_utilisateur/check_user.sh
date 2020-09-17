@@ -28,6 +28,7 @@ done <<<$(grep /home /etc/passwd | sort -t: -k6 )
 
 
 INPUT=$1
+PASS_PAR_DEFAUT=mtdepass123
 
 OLDIFS=$IFS
 IFS=','
@@ -43,9 +44,11 @@ do
 
 	if [[ " ${USERS[@]} " =~ " ${username:1:-1} " ]];
 	then
-		echo "${username:1:-1} est déjà inscrit"
+		echo "${username:1:-1} est déjà inscrit."
 	else
-		echo "${username:1:-1} n'est pas inscrit"
+		echo "inscription de ${username:1:-1}."
+		sudo useradd "${username:1:-1}" --create-home
+		echo "${username:1:-1}":${PASS_PAR_DEFAUT} | sudo chpasswd
 	fi
 
 done <<<$(xls2csv ${INPUT})
