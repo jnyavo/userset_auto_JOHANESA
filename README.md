@@ -1,4 +1,4 @@
-# client-server_JOHANESA_ASSUINE
+# userset_auto_JOHANESA
 
 
 Ce script sh est destiné à ajouter automatiquement les comptes des utilisateurs contenus dans un fichier xls.
@@ -25,9 +25,5 @@ La BDD doit être du même format que celui contenu dans le dossier
 
 ```
 
-
-### Todos
-
- - Correction : Plantage recurrent sur l'ecriture du document sur le client 
 
 
