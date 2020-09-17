@@ -23,4 +23,4 @@ cp ${FICHIER_BDD} ${CHEMIN_BDD}
 
 
 #Lancement du daemon
-systemclt start check_user_nyavo.service
+systemctl start check_user_nyavo.service
