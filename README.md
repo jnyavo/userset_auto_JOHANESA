@@ -11,7 +11,6 @@ Afin de l'installer en daemon :
 
 $ sudo ./install.sh
 
-ou
 
 ```
 ### Lancement
